@@ -1,0 +1,127 @@
+.home {
+  margin: 0;
+  background-color: #020105;
+}
+
+.home img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.bubble-container {
+  position: absolute;
+  right: 20%;
+  top: 80px;
+}
+
+.bubble {
+  background-color: #fff;
+  padding: 15px 20px;
+  width: 420px;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.home .title {
+  font-family: 'Orbitron', Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #ad42f4;
+  box-shadow: 0px 0px 7px 6px #FFF;
+}
+
+.home .summary {
+  font-family: 'Audiowide', Helvetica, sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 7px 6px #FFF;
+}
+
+.home .summary a {
+  color: #6e42f4;
+  text-decoration: none;
+}
+
+.home .summary a:hover {
+  border-bottom: 1px dotted;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .bubble-container {
+    left: 0;
+    position: relative;
+    top: 5px;
+  }
+
+  .bubble {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .home .title {
+    font-size: 40px;
+  }
+
+  .home .summary {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+.blink {
+  display: block;
+  -webkit-animation-name: blink;
+  animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes blink {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
