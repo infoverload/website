@@ -1,28 +1,92 @@
 <!DOCTYPE html>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Infoverload">
-    <meta name="keywords" content="Daisy T, Dazey, infoverload, 1nfoverload">
-    <meta name="author" content="Daisy T">
-    <meta name="viewport" content="width=device-width">
-    <title>Daisy T</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Aldrich|Audiowide|Knewave|Orbitron" rel="stylesheet">
-  </head>
-  <body class="home">
-    <img src="images/background.jpeg">
-    <div class="bubble-container">
-      <div class="bubble title">Hi, I'm Daisy!</div>
-      <div class="bubble summary">
-        Currently based in Berlin<br><br>
-        Programmer, Writer, Tinkerer, Language Enthusiast, Baker, Knitter<br><br>        
-        <a href="mailto:daisyts@gmx.com">Email</a> | 
-        <a href="https://twitter.com/1nfoverload" target="_blank">Twitter</a> |
-        <a href="https://github.com/infoverload" target="_blank">Github</a> |
-        <a href="https://infoverload.github.io" target="_blank">Blog</a><br><br>
-      </div>
-    </div>
-  </body>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Daisy T's Website">
+  <meta name="keywords" content="Daisy T, Dazey, infoverload, 1nfoverload">
+  <meta name="author" content="Daisy T">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daisy T</title>
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich|Audiowide|Roboto|Cabin+Sketch|Special+Elite" rel="stylesheet">
+</head>
+<body>
+    <header class="w-100 vh-100 flex justify-center flex-column bg-purple cover" style="background-image:url('img/bg.jpg');">
+        <div class="bubble">
+          <h1 class="f3 f1-ns lh-title black-80 mw7 mh4 mh5-ns">Hi, I’m Daisy!</h1>
+          <p class="f5 f4-ns lh-copy black-80 measure mh4 mh5-ns relative z-1">
+            I’m a software developer and writer. <br> 
+            I love <a href="https://youtu.be/5h-8V5qY2j0?t=305" target="_blank" class="navy hover-light-blue"> open-source software</a>, learning new <a href="https://github.com/infoverload" target="_blank" class="navy hover-light-blue">technologies</a>, picking up new <a href="https://www.duolingo.com/daisyts" target="_blank" class="navy hover-light-blue"> natural languages</a>, <a href="https://www.ravelry.com/projects/infoverload" target="_blank" class="navy hover-light-blue">knitting</a>, and <a href="https://slides.com/daisyt/observability-kitchen" target="_blank" class="navy hover-light-blue">baking</a>.
+          </p> 
+        </div>    
+    </header>
+    <main class="cf mw9 center black-80">
+        <section class="fl w-100 w-50-l mv3 mv5-ns ph4 ph5-ns">
+            <h2 class="f2"><a class="black-80 underline-hover link" id="Projects" href="#Projects">Fun Projects</a></h2>
+            <a href="http://der-die-das.herokuapp.com/" class="black link b db mb1 blue code underline-hover"><span class="">Der Die Das</span></a>
+            <p class="f5 code mb2 mt2 lh-copy">A simple game made with the Phaser framework (v2.6.2) meant to familiarize players with the German articles.</p>     
+            <p class="black-60 code f6 mb4">
+                Stack:
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">JavaScript</span>
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">Phaser</span>
+                | <a href="https://github.com/infoverload/der-die-das" class="navy">Code</a>
+            </p> 
+            <a href="https://wortschatz.herokuapp.com/" class="black link b db mb1 blue code underline-hover"><span class="">Wortschatz Logger</span></a>
+            <p class="f5 code mb2 mt2 lh-copy">An application built with Laravel 5.3 meant to be a learning aid for people studying German. It provides a centralized way to log and organize German words/phrases one encounters and features an option train/test your knowledge of the articles (der, die, das).</p>
+            <p class="black-60 code f6 mb4">
+                Stack:
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">Laravel</span>
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">PHP7</span>
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">PostgreSQL</span>
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">JavaScript</span>
+                | <a href="https://github.com/infoverload/wortschatz" class="navy">Code</a>
+            </p>
+            <a href="#" class="black link b db mb1 blue code underline-hover"><span class="">Traffic Incidents</span></a>
+            <p class="f5 code mb2 mt2 lh-copy">A basic ReactJS application that makes use of the TomTom Traffic API to display traffic incidents (based on the location dictated by your IP address) in tabular form.</p>     
+            <p class="black-60 code f6 mb4">
+                Stack:
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">JavaScript</span>
+                <span class="bg-black-10 ph2 pv1 br4 dib mb1">ReactJS</span>
+                | <a href="https://github.com/infoverload/trafficincidents" class="navy">Code</a>
+            </p> 
+            <h2 class="f2"><a class="black-80 underline-hover link" id="DevDoodles" href="#DevDoodles">Dev Doodles</a></h2>
+            <div>        
+              <p class="lh-copy"><a href="https://i.imgur.com/wJebLai.jpg" class="black link b db mb1 blue code underline-hover"><span class="">How Does Ping Work?</span></a></p>
+              <p class="lh-copy"><a href="#TBD" class="black link b db mb1 blue code underline-hover"><span class="">A Detailed Primer on the World's Most Hyped Technology</span></a></p>
+            </div>
+        </section>
+        <section class="fl w-100 w-50-l mv3 mv5-ns ph4 ph5-ns">
+            <h2 class="f2"><a class="black-80 underline-hover link" id="Writings" href="#Writings">Writings</a></h2>
+            <div>        
+              <p class="lh-copy"><a href="https://www.twistlock.com/2018/04/17/improve-container-runtime-security/" class="black link b db mb1 blue code underline-hover"><span class="">Improve Container Runtime Security with 8 Powerful Tips</span></a></p>
+              <p class="lh-copy"><a href="https://www.sumologic.com/blog/devops/kubernetes-vs-docker/" class="black link b db mb1 blue code underline-hover"><span class="">Kubernetes vs. Docker: What Does It Really Mean?</span></a></p>
+              <p class="lh-copy"><a href="https://saucelabs.com/blog/why-you-need-automated-testing-at-any-scale" class="black link b db mb1 blue code underline-hover"><span class="">Why You Need Automated Testing at Any Scale</span></a></p>
+            </div>
+            <h2 class="f2"><a class="black-80 underline-hover link" id="Blog" href="https://infoverload.github.io/">Blog <i class="fas fa-marker"></i></a></h2>
+            <div>        
+              <p class="lh-copy"><a href="https://infoverload.github.io/2018/06/02/rustfest-paris-2018/" class="black link b db mb1 blue code underline-hover"><span class="">RustFest Paris 2018</span></a></p>
+              <p class="lh-copy"><a href="https://infoverload.github.io/2018/10/01/all-systems-go-2018/" class="black link b db mb1 blue code underline-hover"><span class="">All Systems Go! 2018</span></a></p>
+            </div>
+            <h2 class="f2"><a class="black-80 underline-hover link" id="Talks" href="#Talks"">Talks</a></h2>
+            <div>        
+              <p class="lh-copy"><a href="https://youtu.be/5h-8V5qY2j0?t=305" class="black link b db mb1 blue code underline-hover"><span class="">PromCon 2018: Baby Steps to Open-Source Contribution</span></a></p>
+              <p class="lh-copy"><a href="#TBD" class="black link b db mb1 blue code underline-hover"><span class="">DACHFest 2018: Improve Your Bread-making Skills with Open-Source Monitoring </span></a></p>
+            </div>
+            <h2 class="f2">CV</h2>
+            <div class="code">
+                <p class="f5 lh-copy"><a href="#PDF" class="link blue mb2 db underline-hover">PDF format</a></p>
+                <p class="f5 lh-copy"><a href="#CLI" class="link blue mb2 db underline-hover">CLI format</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="tc pa5">
+      <h3>Reach out!</h3>
+        <a href="https://twitter.com/1nfoverload" class="link blue center mb4 underline-hover"><i class="fab fa-twitter"></i>1nfoverload </a>  | 
+        <a href="mailto:daisyts@gmx.com" class="link blue center mb4 underline-hover"><i class="fas fa-envelope"></i> email</a>
+    </footer>
+</body>
 </html>
